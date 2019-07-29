@@ -7,6 +7,7 @@ import Chef from '@/views/Chef';
 import Community from '@/views/Community';
 // 集市
 import Bazaar from '@/views/Bazaar';
+// 个人中心
 import User from '@/views/User';
 // 404
 import NoMatch from '@/views/NoMatch';
@@ -33,9 +34,9 @@ const App = () => {
 					<span className = "iconfont icon-tubiao-"></span>
 					<p>名厨</p>
 				</NavLink>
-				<NavLink to = "/community"> 
+				<NavLink to = "/community" className = "shequ-box"> 
 					<span className = "iconfont icon-hudongshequ"></span>
-					<p>社区</p>
+					<p className = "shequ">社区</p>
 				</NavLink>
 				<NavLink to = "/bazaar">
 					<span className = "iconfont icon-dianpu"></span>

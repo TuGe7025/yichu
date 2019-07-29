@@ -30,25 +30,50 @@ html, body, #root, .container {
 			@include flexbox();
 			@include rect(100%, 100%);
 			a {
+				position: relative;
 				@include flex();
-				@include color(#FFD524);
+				// @include color(#FFD524);
+				@include color(rgb(244, 208, 0));
 				@include flexbox();
 				@include flex-direction(column);
 				@include align-items();
+				@include line-height(0);
 				span {
-					@include font-size(20px);
+					@include font-size(22px);
+					@include line-height(32px);
 				}
 				p {
 					@include font-size(12px);
+					@include line-height(12px);
 				}
 				&.active {
-					@include color(#D59E32);
+					// @include color(#D59E32);
+					@include color(rgb(229, 131, 8));
 				}
 				.icon {
 				   width: 1em; height: 1em;
 				   vertical-align: -0.15em;
 				   fill: currentColor;
 				   overflow: hidden;
+				}
+				.shequ-box {
+					background: #fff;
+				}
+				.icon-hudongshequ {
+					background: #f9f9f9;
+					position: absolute;
+					top: -10px;
+					text-align: center;
+					border-radius: 50%;
+					@include rect(.6rem, 100%);
+					@include font-size(40px);
+					@include line-height(34px);
+				}
+				.shequ {
+					position: absolute;
+					bottom: 4px;
+					@include font-size(16px);
+					@include line-height(12px);
 				}
 			}
 		}
