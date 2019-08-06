@@ -1,0 +1,86 @@
+@import '@/lib/reset.scss';
+* { touch-action: pan-y; }
+html, body, #root, .container {
+  @include rect(100%, 100%);
+}
+
+.container{
+  @include flexbox();
+  @include flex-direction(column);
+  .box {
+    @include flex();
+    @include rect(100%, auto); 
+    @include flexbox();
+    @include flex-direction(column);
+    .header {
+      @include rect(100%, 0.44rem);
+      @include background-color(#FFD525);
+      // .sc-example {
+      //   @include rect(100%,auto);
+      // }
+      h1 {
+        text-align: center;
+        line-height: 0.44rem;
+        @include color(#6B400D);
+      }
+      ul {
+        @include flexbox();
+        @include rect(100%, 100%); 
+        li {
+          @include flexbox();
+          @include flex-direction(column);
+          @include justify-content();
+          @include align-items();
+          &:nth-child(1), &:nth-child(3) {
+            @include rect(50px, 100%); 
+          }
+          &:nth-child(2) {
+            @include flex();
+          }
+        }
+      }
+    }
+    .content {
+      @include flex();
+      @include rect(100%, auto);
+      @include overflow();
+      @include background-color(#fff);
+    }
+  }
+  .footer {
+    @include rect(100%, 0.5rem);
+    @include background-color(#efefef);
+    ul {
+      @include rect(100%, 100%);
+      @include flexbox();
+      a {
+        @include flex();
+        @include color(#333);
+        @include rect(auto, 100%);
+        @include flexbox();
+        @include flex-direction(column);
+        @include justify-content();
+        @include align-items(center);
+        span {
+          @include font-size(20px);
+          &:hover {
+            @include font-size(24px);
+          }
+        }
+        img {
+          @include rect(0.24rem,0.24rem);
+          &:hover {
+            @include rect(0.28rem,0.28rem);
+          }
+        }
+        p {
+          @include font-size(12px);
+        }
+
+        &.active { // li.router-link-active {}
+          @include color(#FFD524);
+        }
+      }
+    }
+  }
+}
