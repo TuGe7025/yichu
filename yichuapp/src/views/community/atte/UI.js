@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 // import Mock from '@/Mock';
-import './Community.scss';
+// import './Community.scss';
 // 头部
 import Header from '@/components/Header';
 // 弹幕组件
 // import DPlayer from "react-dplayer";
-
+import '../Community.scss';
 export default class extends Component {
 	render () {
 		return (
@@ -19,7 +19,7 @@ export default class extends Component {
         }}
          />
 				<div className="content">
-					发现
+					关注
 				</div>
 			</div>
 		)		

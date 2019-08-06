@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-// import Mock from '@/Mock';
-import './Community.scss';
+import Talk from '@/components/Community/Talk.jsx';
 // 头部
 import Header from '@/components/Header';
 // 弹幕组件
@@ -19,7 +18,7 @@ export default class extends Component {
         }}
          />
 				<div className="content">
-					发现
+					<Talk />
 				</div>
 			</div>
 		)		

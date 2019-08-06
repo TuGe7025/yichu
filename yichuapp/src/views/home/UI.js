@@ -14,9 +14,6 @@ export default class extends Component {
 		console.log(bannerlist)
 		return (
 			<div className="box">
-				<header className="header">
-					首页头部
-				</header>
 				<div className="content">
 					<Carousel
 						autoplay={ true }
