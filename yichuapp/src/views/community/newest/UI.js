@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// import Mock from '@/Mock';
-// import './Community.scss';
+import Talk from '@/components/Community/Talk.jsx';
 // 头部
-import Header from '@/components/Header';
+import Header from '@/components/Header.jsx';
 // 弹幕组件
 // import DPlayer from "react-dplayer";
 
@@ -19,7 +18,17 @@ export default class extends Component {
         }}
          />
 				<div className="content">
-					最新
+					<div className = "content-nav">
+						<ul>
+							<li>美食秀</li>
+							<li>烘焙</li>
+							<li>出去吃</li>
+							<li>厨艺交流</li>
+							<li>聊家常</li>
+							<li>厨房问答</li>
+						</ul>
+					</div>
+					<Talk />
 				</div>
 			</div>
 		)		

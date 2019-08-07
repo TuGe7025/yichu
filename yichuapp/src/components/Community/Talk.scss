@@ -5,12 +5,12 @@ img {
 }
 .talk {
   @include rect(100%, auto);
-  @include background-color(#999);
+  // @include background-color(#999);
   @include padding(.15rem);
   .talk-title {
     position: relative;
     @include rect(100%, .36rem);
-    @include background-color(#f66);
+    // @include background-color(#f66);
     .talk-title-head {
       position: absolute;
       top: 0;
@@ -74,7 +74,8 @@ img {
         @include line-height(0);
         @include text-align(center);
         .img-box {
-          @include background-color(#333);
+          // @include background-color(#333);
+          // border: 1px solid #999;
           @include rect(1.1rem, 1.1rem);
         }
         i {
@@ -92,6 +93,64 @@ img {
           @include line-height(.19rem);
           @include font-size(.13rem);
         }
+      }
+    }
+  }
+}
+.Attention {
+  @include rect(100%, auto);
+  margin-bottom: .2rem;
+  @include background-color(#efefef);
+}
+.Attention-cont {
+  @include line-height(.19rem);
+  @include font-size(.14rem);
+  @include flexbox();
+  @include flex-direction(column);
+  @include padding(.1rem 0);
+  @include rect(100%, auto);
+  .Attention-cont-title {
+    @include line-height(.2rem);
+    @include font-size(.16rem);
+    @include rect(100%, .22rem);
+  }
+  .cont {
+    @include line-height(.2rem);
+    @include font-size(.16rem);
+    @include padding(.1rem 0);
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+.Attention-img-box {
+  @include margin(auto 5%);
+  ul {
+    @include flexbox();
+    @include justify-content(space-between);
+    li {
+      @include background-color(#fff);
+      @include line-height(0);
+      @include text-align(center);
+      .img-box {
+        @include background-color(#333);
+        @include rect(1.1rem, 1.1rem);
+      }
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        @include rect(.19rem, .19rem);
+        @include background-color(#333);
+        @include line-height(.19rem);
+        @include font-size(.19rem);
+        @include text-align(left);
+      }
+      span {
+        display: inline-block;
+        @include rect(.29rem, .19rem);
+        @include line-height(.19rem);
+        @include font-size(.13rem);
       }
     }
   }

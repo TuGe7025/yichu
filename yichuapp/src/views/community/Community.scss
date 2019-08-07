@@ -27,18 +27,18 @@
         @include color(#999);
         a {
           @include flex();
-          @include color(#999);
+          @include color(#6B400D);
           @include font-size(.14rem);
           @include line-height(.24rem);
           &.active {
             position: relative;
             font-size: 18px;
             line-height: 22px;
-            @include color(#333);
+            @include color(#6B400D);
           }
           &.active::before {
             position: absolute;
-            bottom: 0;
+            bottom: -3px;
             left: 0;
             right: 0;
             @include margin(auto);
@@ -52,5 +52,56 @@
     }
   }
 }
-
-
+.topic {
+  padding: 0.15rem;
+  @include rect(100%, 100px);
+  @include background-color(#f66);
+  border: 0.01rem solid #999;
+}
+.place-top {
+  padding: 0.15rem;
+  @include rect(100%, .5rem);
+  @include background-color(#66f);
+  .top-label{
+    @include flexbox();
+    .label-l {
+      @include rect(.42rem, .22rem);
+      @include text-align(center);
+      @include font-size(.14rem);
+      @include line-height(.22rem);
+      @include color(#D20905);
+      border: 0.01rem solid #EE2424;
+    }
+    .label-t {
+      @include rect(100%, .22rem);
+      @include ellipsis();
+      @include font-size(.14rem);
+      @include line-height(.24rem);
+    }
+  }
+}
+.content-nav {
+  @include rect(100%, 1.1rem);
+  // @include background-color(#999);
+  @include padding(0.15rem);
+  @include flexbox();
+  @include justify-content(center);
+  @include align-items(center);
+  border-bottom: .01rem solid #999;
+  ul {
+    @include rect(100%, auto);
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include justify-content(center);
+    li {
+      // @include flex(3);
+      margin: .6%;
+      @include rect(30%, 45%);
+      @include font-size(.14rem);
+      @include line-height(.32rem);
+      @include text-align(center);
+      background-color: #f2f2f2;
+      border-radius: .06rem;
+    }
+  }
+}
