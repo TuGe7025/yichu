@@ -23,6 +23,16 @@ html, body, #root, .container {
         line-height: 0.44rem;
         @include color(#6B400D);
       }
+      .am-search {
+        // width: 200px;
+        border-bottom: 1px solid #ddd;
+        background-color: none;
+      }
+      .sub-title {
+        color: #888;
+        font-size: 14px;
+        padding: 30px 0 18px 0;
+      }
       ul {
         @include flexbox();
         @include rect(100%, 100%); 

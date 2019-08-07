@@ -1,0 +1,80 @@
+@import '@/lib/reset.scss';
+
+.contents {
+    @include rect(100%, 100%);
+    @include background-color(#f9f9f9);
+    .topinner {
+        @include rect(100%, 100%);
+        @include flexbox();
+        @include flex-direction(column);
+        @include background-color(#fff);
+        @include align-items(center);
+        margin-bottom: 10px;
+        .logins {
+            @include rect(100%,auto);
+            @include flexbox();
+            @include flex-direction(column);
+            @include align-items(center);
+            div {
+                @include rect(95%, 1.1rem);
+                @include flexbox();
+                @include justify-content(space-between);
+                @include align-items(center);
+                span {
+                    @include rect(60%,auto)
+                }
+            }
+            ul{
+                @include rect(85%,0.5rem);
+                @include flexbox();
+                @include justify-content(space-between);
+                @include align-items(center);
+                // @include background-color(#f66);
+                @include font-size(12px);
+                li{
+                    @include rect(20%,auto);
+                    @include flexbox();
+                    @include flex-direction(column);
+                    @include align-items(center);
+                }
+            }
+        }
+        .youhui {
+            @include font-size(12px);
+            @include flexbox();
+            @include rect(85%,0.5rem);
+            @include justify-content(space-between);
+            @include align-items(center);
+            div{
+                @include rect(20%,auto);
+                @include flexbox();
+                @include flex-direction(column);
+                @include align-items(center);
+            }
+        }
+    }
+    .jilu {       
+        @include flexbox();
+        @include flex-direction(column);
+        @include background-color(#fff);
+        margin-bottom: 10px;
+        li{
+            @include rect(90%,0.4rem);
+            margin-left: 5%;
+            @include flexbox();
+            @include justify-content(space-between);
+            @include align-items(center);
+            border-bottom:1px solid #f9f9f9;
+            div {
+                @include rect(30%,auto);
+                @include flexbox();
+                span {
+                    margin-left: 10px;
+                }
+            }
+            i{
+                color:#FFD524;
+            }
+        }
+    }
+}

@@ -14,7 +14,6 @@ import dianzan from '@/images/Icon/dianzan.png';
 import dianpu from '@/images/Icon/dianpu.png';
 import huojian from '@/images/Icon/huojian.png';
 
-
 const routes = [
 	{ path: '/home', component: Home },
 	{ path: '/community', component: Community },
@@ -22,6 +21,7 @@ const routes = [
 	{ path: '/stops', component: Stops },
 	{ path: '/user', component: User }
 ]
+
 export default () => (
 	<div className ="container">
 		<Switch>

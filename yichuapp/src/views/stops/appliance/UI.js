@@ -4,7 +4,6 @@ import { Grid } from 'antd-mobile';
 import tubiao from '@/images/Icon/tubiao-.png';
 import dianzan from '@/images/Icon/dianzan.png';
 
-
 export default class extends Component {
 	
 	render () {
