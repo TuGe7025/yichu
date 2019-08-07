@@ -16,6 +16,7 @@ const routes = [
 	{ path: '/stops', component: Stops },
 	{ path: '/user', component: User }
 ]
+
 export default () => (
 	<div className ="container">
 		<Switch>

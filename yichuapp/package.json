@@ -5,6 +5,8 @@
   "proxy": "https://movie.douban.com/",
   "dependencies": {
     "@babel/core": "7.4.3",
+    "@material-ui/core": "^4.3.1",
+    "@material-ui/styles": "^4.3.0",
     "@svgr/webpack": "4.1.0",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
@@ -53,6 +55,7 @@
     "react-icons": "^3.7.0",
     "react-redux": "^7.1.0",
     "react-router-dom": "^5.0.1",
+    "react-swipeable-views": "^0.13.3",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
     "resolve": "1.10.0",
