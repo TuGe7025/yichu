@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class extends Component {
-
-	render () {
-		return (
-			<div className = "box">
-				<header className = "header">404头部</header>
-				<div className = "content">
-					404
-				</div>
-			</div>
-		)
-	}
-}
+// replace表示替换
+export default (props) => (
+	<div className="box">
+		啊哦~你访问不该看的了吧
+		<button onClick = {() => {
+			props.history.replace('/home')
+		} }>返回首页</button>
+	</div>
+)

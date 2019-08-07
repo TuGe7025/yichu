@@ -52,8 +52,9 @@ img {
       right: 0;
       top: 0;
       bottom: 0;
+      border: .01rem solid #999;
       @include margin(auto);
-      @include rect(.55rem, .17rem);
+      @include rect(.55rem, .18rem);
       @include background-color(#fff);
       @include text-align(center);
       @include color(#D20905);
