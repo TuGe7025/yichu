@@ -6,7 +6,7 @@ export default (props) => {
       <div className = "talk-title">
         <div className= "talk-title-head">
           <div className = "head">
-            {/* <img /> */}
+            {/* <img src="" alt="图片" /> */}
           </div>
           <div className = "name">
             <p>LEI-LEI</p>
@@ -19,21 +19,21 @@ export default (props) => {
       <div className = "talk-img-box">
         <ul>
           <li>
-            <div className = "img-box"></div>
+            <div className = "img-box"><img src="" alt="图片" /></div>
             <div>
               <i></i>
               <span>1222</span>
             </div>
           </li>
           <li>
-            <div className = "img-box"></div>
+            <div className = "img-box"><img src="" alt="图片" /></div>
             <div>
               <i></i>
               <span>1222</span>
             </div>
           </li>
           <li>
-            <div className = "img-box"></div>
+            <div className = "img-box"><img src="" alt="图片" /></div>
             <div>
               <i></i>
               <span>1222</span>

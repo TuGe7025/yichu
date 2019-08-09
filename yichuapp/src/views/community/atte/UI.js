@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// import Mock from '@/Mock';
-// import './Community.scss';
+import Attention from '@/components/Community/attention.jsx';
 // 头部
-import Header from '@/components/Header';
+import Header from '@/components/Header.jsx';
 // 弹幕组件
 // import DPlayer from "react-dplayer";
 import '../Community.scss';
@@ -19,7 +18,7 @@ export default class extends Component {
         }}
          />
 				<div className="content">
-					关注
+					<Attention />
 				</div>
 			</div>
 		)		
