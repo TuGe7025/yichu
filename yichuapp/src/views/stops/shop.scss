@@ -24,6 +24,12 @@ html, body, #root, .box {
         width: 40px;
         height: 60px;
       }
+      .shoplist {
+        a{
+          @include color(#f66);
+        }
+        border-bottom: 1px solid #f9f9f9;
+      }
       .lists {
         @include rect(100%,100%);
         @include flexbox();

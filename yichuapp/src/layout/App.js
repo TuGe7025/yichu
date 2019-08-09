@@ -10,7 +10,6 @@ import Stops from '@/views/stops';
 import NoMatch from '@/views/NoMatch';
 import Footer from '@/components/Footer'; // 底部
 
-
 export default () => (
 	<div className ="container">
 		<Switch>

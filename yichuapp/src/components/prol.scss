@@ -1,0 +1,76 @@
+@import '@/lib/reset.scss';
+
+.prolisting {
+    @include rect(95%, auto);
+    @include flexbox();
+    @include justify-content(space-between);
+    @include flex-wrap(wrap);
+    // @include item-conent(center);
+        margin-left: 10px;
+    .iteming {
+        @include rect(48%, 2.7rem);
+        @include flexbox();
+        @include flex-direction(column);
+        @include align-items(center);
+        @include justify-content(space-between);
+        background-color: antiquewhite;
+        margin-bottom: 12px;
+        border-radius: 7px;
+        overflow: hidden;
+        box-shadow: -2px 1px 5px #a3a3a3;
+        .proimg {
+            @include rect(100%,2rem);
+        }
+        .protit {
+            @include rect(92%,0.7rem);
+            @include flexbox();
+            @include flex-direction(column);
+            @include align-items(center);
+            @include justify-content(center);
+            p {
+                @include rect(100%, auto);
+                overflow: hidden;
+                white-space:nowrap;
+                text-overflow: ellipsis;
+            }
+            ul{
+                @include rect(100%, 35px);
+                @include flexbox;
+                @include justify-content(space-between);
+                @include align-items(center);
+                li {
+                    @include font-size(12px);
+                    @include flexbox;
+                    @include align-items(center);
+                    @include justify-content(space-between);
+                    &:nth-child(1) {
+                        width: 60%;
+                        span{
+                            width: 70%;
+                            height: 20px;
+                            line-height: 20px;
+                            // 设置超出字段出现...
+                            overflow: hidden;
+                            white-space:nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                    &:nth-child(2) {
+                        i {
+                            @include font-size(20px);
+                            @include color(rgb(204, 201, 201));
+                        }
+                        width: 25%;
+                        span {
+                            line-height: 18px;
+                        }
+                    }
+                    .touxiang {
+                        @include rect(22px,22px);
+                    }
+                }
+            }
+        }
+    }
+}
+
