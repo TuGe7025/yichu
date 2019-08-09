@@ -17,11 +17,7 @@ export default class extends Component {
      				 mode="light"
 					icon={<Icon type="left" />}
 					onLeftClick={(props) => this.props.history.goBack()}
-					rightContent={<div style={{
-						width: '22px',
-						height: '22px',
-						background: 'url(https://www.w3.org/2000/svg) center center /  21px 21px no-repeat' }}
-					  />}
+					rightContent={<p className='iconfont icon-gaiicon-'></p>}
 					>厨房电器  	
 				</NavBar>
 				<div className="content">

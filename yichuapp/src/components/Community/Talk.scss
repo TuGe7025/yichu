@@ -1,0 +1,98 @@
+@import '@/lib/reset.scss';
+img {
+  display: block;
+  @include rect(100%, 100%);
+}
+.talk {
+  @include rect(100%, auto);
+  @include background-color(#999);
+  @include padding(.15rem);
+  .talk-title {
+    position: relative;
+    @include rect(100%, .36rem);
+    @include background-color(#f66);
+    .talk-title-head {
+      position: absolute;
+      top: 0;
+      left: 0;
+      @include rect(100%, 100%);
+      .head {
+        float: left;
+        @include rect(.36rem, .36rem);
+        // @include border-radius(50%);
+        // @include border(.01rem solid #333);
+        border: 1px solid #999;
+        border-radius: 50%;
+        @include background-color(#fff);
+        overflow: hidden;
+        margin-right: .04rem;
+      }
+      .name {
+        float: left;
+        @include line-height(0);
+        p {
+          @include color(rgba(16, 16, 16, 1));
+          @include font-size(.14rem);
+          @include line-height(.2rem);
+          @include text-align(left);
+          @include rect(100%, .2rem);
+          @include background-color(#fff);
+        }
+        time {
+          @include rect(.44rem, .17rem);
+          @include color(rgba(142, 141, 141, 1));
+          @include font-size(.12rem);
+          @include line-height(.17rem);
+          @include text-align(left);
+        }
+      }
+    }
+    .talk-title-att {
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border: .01rem solid #999;
+      @include margin(auto);
+      @include rect(.55rem, .18rem);
+      @include background-color(#fff);
+      @include text-align(center);
+      @include color(#D20905);
+      @include margin(.10rem 0 0 0);
+    }
+  }
+  .talk-cont {
+    @include ellipsis();
+    @include padding(.1rem 0);
+  }
+  .talk-img-box {
+    ul {
+      @include flexbox();
+      @include justify-content(space-between);
+      li {
+        @include background-color(#fff);
+        @include line-height(0);
+        @include text-align(center);
+        .img-box {
+          @include background-color(#333);
+          @include rect(1.1rem, 1.1rem);
+        }
+        i {
+          display: inline-block;
+          vertical-align: middle;
+          @include rect(.19rem, .19rem);
+          @include background-color(#333);
+          @include line-height(.19rem);
+          @include font-size(.19rem);
+          @include text-align(left);
+        }
+        span {
+          display: inline-block;
+          @include rect(.29rem, .19rem);
+          @include line-height(.19rem);
+          @include font-size(.13rem);
+        }
+      }
+    }
+  }
+}

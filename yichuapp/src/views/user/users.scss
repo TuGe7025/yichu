@@ -20,6 +20,13 @@
                 @include flexbox();
                 @include justify-content(space-between);
                 @include align-items(center);
+                a {
+                    @include color(#000);
+                    @include rect(95%, auto);
+                    @include flexbox();
+                    @include justify-content(space-between);
+                    @include align-items(center);
+                }
                 span {
                     @include rect(60%,auto)
                 }
@@ -31,7 +38,8 @@
                 @include align-items(center);
                 // @include background-color(#f66);
                 @include font-size(12px);
-                li{
+                a{
+                    @include color(#000);
                     @include rect(20%,auto);
                     @include flexbox();
                     @include flex-direction(column);
@@ -45,7 +53,8 @@
             @include rect(85%,0.5rem);
             @include justify-content(space-between);
             @include align-items(center);
-            div{
+            a{
+                @include color(#000);
                 @include rect(20%,auto);
                 @include flexbox();
                 @include flex-direction(column);
@@ -58,7 +67,8 @@
         @include flex-direction(column);
         @include background-color(#fff);
         margin-bottom: 10px;
-        li{
+        a {
+            @include color(#000);
             @include rect(90%,0.4rem);
             margin-left: 5%;
             @include flexbox();

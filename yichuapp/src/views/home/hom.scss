@@ -1,0 +1,65 @@
+@import '@/lib/reset.scss';
+
+   .zhongxin {
+    // @include rect(100%,5rem);
+    // @include flexbox();
+    // @include flex-direction(column);
+    // // @include justify-content(center);
+    // // @include flex-wrap(wrap);
+        text-align: center;
+        #home-list {
+            @include rect(95%,2rem);
+            @include flexbox();
+            @include flex-wrap(wrap);
+            @include justify-content(space-between);
+            @include align-items(center);
+            margin-left: 10px;
+            li{
+            @include rect(25%, 0.7rem);
+            @include flexbox();
+            @include flex-direction(column);
+            @include justify-content(center);
+            @include align-items(center);
+            &:nth-child(1) {
+                    @include rect(15%, 0.7rem);
+            }
+            &:nth-child(5) {
+                @include rect(15%, 0.7rem);
+        }
+                span {
+                    margin-bottom: 5px;
+                }
+            i {
+                background-color: #f9f9f9;
+
+                img{
+                    @include rect(0.4rem,0.4rem);
+                }
+            }
+            }
+        }
+        h1 {
+            height: 0.3rem;
+            line-height: 0.3rem;
+        }
+        .vidos {
+            @include rect(100%, 2rem);
+            @include flexbox();
+            @include justify-content();
+            @include align-items(center);
+            .vidos-big{
+                @include rect(45%,100%);
+                background-color: aquamarine;
+            }
+            .vidos-small{
+                @include rect(45%,100%);
+                @include flexbox();
+                @include flex-direction(column);
+                @include justify-content();
+                div{
+                    @include rect(100%,50%);
+                    background-color: darksalmon;
+                }
+            }
+        }
+   }

@@ -1,18 +1,25 @@
 import React, { Component } from 'react';
 // import Mock from '@/Mock';
+import './Community.scss';
+// 头部
+import Header from '@/components/Header';
+// 弹幕组件
+// import DPlayer from "react-dplayer";
 
 export default class extends Component {
 	render () {
 		return (
 			<div className="box">
-				<header className="community-header" style={{width:'100%',height:'0.44rem',backgroundColor:'#FFD525'}}>
-					<ul style={{display:'flex',width:'100%',height:'0.44rem',justifyContent:'center',alignItems:'center'}}>
-						<li>关注</li>
-						<li>发现</li>
-						<li>最新</li>
-					</ul>	
-				</header>	
+				<Header {...this.props}
+        label="发现"
+        labelLeft="关注"
+        labelRight="最新"
+        onLeftClick = {() => {
+          // this.props.history.goBack()
+        }}
+         />
 				<div className="content">
+					发现
 				</div>
 			</div>
 		)		

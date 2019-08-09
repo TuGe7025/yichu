@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+// 引入声明式导航
+import { NavLink } from 'react-router-dom';
 //图标
 import Bangbangtang from '@/images/Icon/bangbangtang.png';
 import Loginbj from '@/images/Icon/loginbj1.jpg';
 import './users.scss';
 
+// 设置登录注册背景图片样式
 const sectionStyle = {
 	width:'100%',
 	backgroundImage:`url(${Loginbj})`,
@@ -24,92 +27,93 @@ export default class extends Component {
 							<li className='logins' style={sectionStyle}>
 								<div>
 									<img src={Bangbangtang} alt='' style={{width:'80px',height:'80px'}} />
-									<span>请登录/注册</span>
-									<i className="iconfont icon-next"></i>
+									<NavLink to='/personage/login'>
+										<span>请登录/注册</span>
+									</NavLink>
 								</div>
 								<ul className='innertext'>
-									<li>
+									<NavLink to='/personage/menu'>
 										<p>0</p>
 										<span>帖子</span>
-									</li>
-									<li>
+									</NavLink>
+									<NavLink  to='/personage/menu'>
 										<p>0</p>
 										<span>菜谱</span>
-									</li>
-									<li>
+									</NavLink>
+									<NavLink to='/personage/attention'>
 										<p>0</p>
 										<span>关注</span>
-									</li>
+									</NavLink>
 								</ul>
 							</li>
 							<li className='youhui'>
-								<div>
+								<NavLink to='/personage/phaseolus'>
 									<p>我的菜豆</p>
 									<span>0</span>
-								</div>
-								<div>
+								</NavLink>
+								<NavLink to='/personage/integral'>
 									<p>我的积分</p>
 									<span>0</span>
-								</div>
-								<div>
+								</NavLink>
+								<NavLink to='/personage/coupon'>
 									<p>优惠券</p>
 									<span>0</span>
-								</div>
+								</NavLink>
 							</li>
 						</ul>
 					</div>
 					<ul className="jilu">
-						<li>
+						<NavLink to='/personage/goods'>
 							<div>
 								<i className="iconfont icon-ziyuan"></i>
 								<span>我的订单</span>
 							</div>
 							<i className="iconfont icon-next"></i>
-						</li>
-						<li>
+						</NavLink>
+						<NavLink to='/personage/task'>
 							<div>
 								<i className="iconfont icon-renwu"></i>
 								<span>任务中心</span>
 							</div>
 							<i className="iconfont icon-next"></i>
-						</li>
-						<li>
+						</NavLink>
+						<NavLink to='/personage/favorite'>
 							<div>
 								<i className="iconfont icon-xinbaniconshangchuan-"></i>
 								<span>我的收藏</span>
 							</div>
 							<i className="iconfont icon-next"></i>
-						</li>
-						<li>
+						</NavLink>
+						<NavLink to='/personage/history'>
 							<div>
 								<i className="iconfont icon-lishi"></i>
 								<span>浏览历史</span>
 							</div>
 							<i className="iconfont icon-next"></i>
-						</li>
+						</NavLink>
 					</ul>
 					<ul className="jilu">
-						<li>
+						<NavLink to='/personage/friends'>
 							<div>
 								<i className="iconfont icon-ziyuan"></i>
 								<span>邀请好友</span>
 							</div>
 							<i className="iconfont icon-next"></i>
-						</li>
-						<li>
+						</NavLink>
+						<NavLink to='/personage/help'>
 							<div>
 								<i className="iconfont icon-renwu"></i>
 								<span>反馈帮助</span>
 							</div>
 							<i className="iconfont icon-next"></i>
-						</li>
-						<li>
+						</NavLink>
+						<NavLink to='/personage/setting'>
 							<div>
 								<i className="iconfont icon-xinbaniconshangchuan-"></i>
 								<span>设置</span>
 							</div>
 							<i className="iconfont icon-next"></i>
-						</li>
+						</NavLink>
 					</ul>
 				</div>
 			</div>

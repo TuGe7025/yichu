@@ -1,0 +1,56 @@
+@import '@/lib/reset.scss';
+.community {
+  @include rect(100%, 100%);
+  @include background-color(#fff);
+}
+.community-header {
+  @include rect(100%, 0.44rem);
+  @include background-color(#FFD525);
+  @include flexbox();
+  @include justify-content();
+  ul {
+    @include rect(100%, 100%);
+    @include flexbox();
+    @include justify-content();
+    @include align-items();
+    @include text-align(center);
+    li {
+      @include flex();
+      @include rect(100%, 100%);
+      @include align-items();
+      &.label {
+        @include rect(100%, 100%);
+        @include flex(3);
+        @include flexbox();
+        @include justify-content();
+        @include align-items();
+        @include color(#999);
+        a {
+          @include flex();
+          @include color(#999);
+          @include font-size(.14rem);
+          @include line-height(.24rem);
+          &.active {
+            position: relative;
+            font-size: 18px;
+            line-height: 22px;
+            @include color(#333);
+          }
+          &.active::before {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            @include margin(auto);
+            content: "";
+            @include rect(.19rem, .02rem);
+            @include background-color(#EE2424);
+            @include color(#333);
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '@/layout/App';
 import Carts from '@/layout/Carts';
+// import Comy from '@/layout/Comy';
+import Personage from '@/layout/Personage';
 import DetailApp from '@/layout/detailApp';
 import { Provider } from 'react-redux';
 // import ReactSVG from 'react-svg';
@@ -17,6 +19,8 @@ ReactDOM.render(
 		<Router>
 			<Switch>
 				<Route path='/carts' component= { Carts } />
+				<Route path='/personage' component= { Personage } />
+				{/* <Route path='/comy' component= { Comy } /> */}
 				<Route path='/detailApp' component= { DetailApp } />
 				<Route path='/' component= { App } />
 			</Switch>
